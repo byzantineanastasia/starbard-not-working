@@ -1,0 +1,64 @@
+{
+  "name": "starboard event",
+  "temp": "reaction",
+  "event-type": "28",
+  "_id": "pqdMA",
+  "actions": [
+    {
+      "reaction": "1",
+      "varName": "reaction",
+      "info": "0",
+      "storage": "1",
+      "varName2": "message",
+      "name": "Store Reaction Info"
+    },
+    {
+      "message": "1",
+      "varName": "message",
+      "info": "15",
+      "storage": "1",
+      "varName2": "url",
+      "name": "Store Message Info"
+    },
+    {
+      "reaction": "1",
+      "varName": "reaction",
+      "info": "3",
+      "storage": "1",
+      "varName2": "e name",
+      "name": "Store Reaction Info"
+    },
+    {
+      "storage": "2",
+      "varName": "starboard emoji name",
+      "comparison": "1",
+      "value": "tempVars(\"e name\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "4",
+      "varName": "",
+      "message": "yeet",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "message",
+      "channel": "6",
+      "varName2": "starboard channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
