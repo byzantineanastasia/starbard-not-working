@@ -2,37 +2,29 @@
   "name": "starboard event",
   "temp": "reaction",
   "event-type": "28",
-  "_id": "pqdMA",
+  "_id": "Hfkqt",
   "actions": [
     {
       "reaction": "1",
       "varName": "reaction",
       "info": "0",
       "storage": "1",
-      "varName2": "message",
+      "varName2": "MO",
       "name": "Store Reaction Info"
-    },
-    {
-      "message": "1",
-      "varName": "message",
-      "info": "15",
-      "storage": "1",
-      "varName2": "url",
-      "name": "Store Message Info"
     },
     {
       "reaction": "1",
       "varName": "reaction",
       "info": "3",
       "storage": "1",
-      "varName2": "e name",
+      "varName2": "EN",
       "name": "Store Reaction Info"
     },
     {
-      "storage": "2",
-      "varName": "starboard emoji name",
+      "storage": "1",
+      "varName": "EN",
       "comparison": "1",
-      "value": "tempVars(\"e name\")",
+      "value": "'serverVars(\"starboard emoji\")'",
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "1",
@@ -40,25 +32,15 @@
       "name": "Check Variable"
     },
     {
-      "channel": "4",
-      "varName": "",
-      "message": "yeet",
+      "channel": "6",
+      "varName": "starboard channel",
+      "message": "${tempVars(\"MO\")}",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Send Message"
-    },
-    {
-      "storage": "1",
-      "varName": "message",
-      "channel": "6",
-      "varName2": "starboard channel",
-      "storage3": "0",
-      "varName3": "",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Send Embed Message"
     }
   ]
 }
+
